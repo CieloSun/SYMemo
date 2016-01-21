@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.symemo.SyncActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/sync_edit_user"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/key_username" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/sync_edit_password"
+            android:layout_below="@+id/sync_edit_user"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/key_password"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sync_invalid_prompt"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearLayout">
+
+            <com.dd.CircularProgressButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sync_button_reg"
+                android:layout_weight="2"
+                app:cpb_textComplete="@string/info_success"
+                app:cpb_textError="@string/error_general"
+                app:cpb_textIdle="@string/action_register"
+                app:cpb_colorProgress="#00000000"
+                android:layout_gravity="center_horizontal" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <com.dd.CircularProgressButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sync_button_upload"
+                android:layout_weight="2"
+                app:cpb_iconComplete="@drawable/ic_check_white_48dp"
+                app:cpb_textComplete="@string/info_success"
+                app:cpb_textError="@string/error_general"
+                app:cpb_textIdle="@string/action_upload"
+                app:cpb_colorProgress="#00000000"
+                android:layout_gravity="center_horizontal" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <com.dd.CircularProgressButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sync_button_download"
+                android:layout_weight="2"
+                app:cpb_textComplete="@string/info_success"
+                app:cpb_textError="@string/error_general"
+                app:cpb_textIdle="@string/action_download"
+                app:cpb_colorProgress="#00000000"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

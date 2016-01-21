@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">EasyNote</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_introduce">IntroduceActivity</string>
+    <string name="title_activity_upload">UploadActivity</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="error_general">Error</string>
+    <string name="error_existed_user">User exist</string>
+    <string name="error_network">Network error</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="error_unauthorized">Invalid user name or password</string>
+    <string name="error_invalid_characters">Including invalid characters</string>
+    <string name="error_too_short">Too short</string>
+    <string name="error_too_long">Too long</string>
+    <string name="info_success">Success</string>
+    <string name="action_register">Sign up</string>
+    <string name="action_upload">Upload</string>
+    <string name="action_download">Download</string>
+    <string name="prompt_sync"> </string>
+    <string name="key_username">User name</string>
+    <string name="key_password">Password</string>
+    <string name="welcome_content">Welcome to use this application.</string>
+    <string name="welcome_time">1970-01-01 00:00:00</string>
+</resources>
